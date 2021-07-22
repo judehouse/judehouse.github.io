@@ -117,7 +117,7 @@ h2 {
   bottom: 5px;
   width: calc(100% - 3rem);
   height: 2px;
-  background: black;
+  background: #e1cae6;
   opacity: 0;
   transform: translateY(-5px) scaleY(0);
   transition: all 250ms ease;
@@ -128,11 +128,16 @@ h2 {
   opacity: 1;
 }
 #nav-logo {
+  text-decoration: none;
   font-weight: bold;
   font-size: 2rem;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e1cae6;
+}
+#nav-logo:hover,
+#nav-logo:focus {
+  -webkit-text-stroke-width: 1.3px;
 }
 #nav-contact {
   border-style: solid;
@@ -168,8 +173,7 @@ h2 {
   height: 2em;
 }
 .background-image subhead {
-  margin: 2em;
-  margin-top: 1em;
+  margin: 1em;
   height: 2em;
 }
 .background-image .button {
