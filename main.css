@@ -1,12 +1,12 @@
 @font-face {
   font-family: "monument-extended";
-  src: url(fonts/MonumentExtended-Regular.otf);
+  src: url("./fonts/MonumentExtended-Regular.otf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "monument-extended";
-  src: url(fonts/MonumentExtended-Ultrabold.otf);
+  src: url("./fonts/MonumentExtended-Ultrabold.otf");
   font-style: bold;
   font-weight: 600;
 }
@@ -17,6 +17,11 @@
   padding-left: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 html,
 body {
@@ -50,15 +55,42 @@ h2 {
   padding: 0;
   inline-size: 80%;
 }
-header {
-  margin-bottom: 0;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #e1cae6;
+  transition: all 250ms ease;
+  text-align: center;
+  text-decoration: none;
+  color: #707070;
+  border-radius: 2rem;
 }
+.button:hover,
+.button:focus {
+  background-color: #e1cae6;
+}
+
+.button--border:hover,
+.button--border:focus {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #e1cae6;
+}
+.button--blur {
+  border-color: transparent;
+  background-color: rgb(255 255 255 / 0.54);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header {
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
 .header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  background-color: #fff;
 }
 
 .nav ul {
@@ -67,7 +99,6 @@ header {
   padding: 0;
   display: flex;
   gap: 2rem;
-  margin-right: -8rem;
 }
 .nav a {
   color: #707070;
@@ -77,6 +108,24 @@ header {
   border-radius: 2rem;
   text-decoration: none;
   background-color: transparent;
+  position: relative;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: 5px;
+  width: calc(100% - 3rem);
+  height: 2px;
+  background: black;
+  opacity: 0;
+  transform: translateY(-5px) scaleY(0);
+  transition: all 250ms ease;
+}
+.nav a:hover::after,
+.nav a:focus::after {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
 }
 #nav-logo {
   font-weight: bold;
@@ -103,15 +152,16 @@ header {
 //  background-size: cover;
 //}
 .background-image {
-  outline: 2px solid red;
   background-image: url("images/background-1.png");
   width: 50%;
-  height: 40em;
-  margin: 5em;
+  min-height: 40em;
+  margin: 5em auto;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50px;
   background-position: center;
+  padding: 2rem;
+  position: relative;
 }
 .background-image h2 {
   margin: 0.5em;
@@ -122,6 +172,9 @@ header {
   margin-top: 1em;
   height: 2em;
 }
-.background-image button {
-  display: none;
+.background-image .button {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
