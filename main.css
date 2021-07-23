@@ -390,10 +390,11 @@ h6 {
 }
 .latte-chart {
   max-width: 600px;
-  position: relative;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  //left: 50%;
+  //bottom: -10px;
+  //transform: translateX(-50%);
 }
 footer {
   background-color: #f8f6f8;
