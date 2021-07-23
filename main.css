@@ -259,11 +259,9 @@ label {
 }
 input {
   margin-top: 1em;
+  margin-bottom: 1em;
   display: block;
   width: 50%;
-}
-input[type="submit"] {
-  width: 10%;
 }
 #button-send {
   background-color: transparent;
@@ -271,4 +269,5 @@ input[type="submit"] {
   padding: 7.5px 15px;
   font-size: 0.7em;
   text-align: center;
+  margin-top: 1em;
 }
