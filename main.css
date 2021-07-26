@@ -219,10 +219,31 @@ h3 {
   height: 100px;
   box-shadow: 0px 3px 5px rgb(111 120 150 / 0.4);
 }
-
-.project-thumbnail:hover,
-.project-thumbnail:focus {
+.project-thumbnail--dashboard {
+  position: relative;
+  background-color: white;
+  border-radius: 1.5em;
+  margin-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 3px 5px rgb(111 120 150 / 0.4);
+}
+.button--hover::after {
+  content: "Cornerstone Athens Church";
   box-shadow: -0.3px 5px 10px rgb(111 120 150 / 0.4);
+  position: absolute;
+  bottom: 5px;
+  height: 10px;
+  opacity: 0;
+  transform: translateY(-5px) scaleY(0);
+  transition: all 250ms ease;
+}
+.button--hover:hover::after,
+.button--hover:focus::after {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
 }
 h4 {
   margin-top: 8em;
@@ -425,7 +446,7 @@ footer {
 }
 footer p {
   color: #707070;
-  margin: 0 1em;
+  margin: 0em;
   font-size: 0.7em;
 }
 
@@ -457,4 +478,47 @@ footer p {
   padding-top: 1.5em;
   background-repeat: no-repeat;
   background-position: center;
+}
+.special {
+  margin-bottom: 1em;
+}
+.project-title {
+  color: #707070;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0;
+  font-size: 0.7rem;
+}
+.cornerstone-header {
+  position: relative;
+  margin-top: -14.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: 707070;
+  max-width: 98%;
+  height: 11vw;
+  border-radius: 18px;
+}
+.cornerstone-header-image {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 64%;
+  height: auto;
+  border-radius: 40px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  margin-top: -5%;
+}
+.projects-2020 {
+  margin-bottom: 5%;
+}
+.projects-2021 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20%;
 }
