@@ -232,19 +232,74 @@ h3 {
 }
 .button--hover::after {
   content: "Cornerstone Athens Church";
-  box-shadow: -0.3px 5px 10px rgb(111 120 150 / 0.4);
+  color: #707070;
+  font-size: 0.7em;
   position: absolute;
-  bottom: 5px;
+  bottom: 46%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 10px;
   opacity: 0;
   transform: translateY(-5px) scaleY(0);
-  transition: all 250ms ease;
+  transition: all 500ms ease;
 }
 .button--hover:hover::after,
 .button--hover:focus::after {
   transform: translateY(0) scaleY(1);
   opacity: 1;
 }
+.button--hover--minimal::after {
+  content: "MINIMAL";
+  color: #707070;
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 14%;
+  left: 26.6%;
+  height: 10px;
+  opacity: 0;
+  transform: translateY(-5px) scaleY(0);
+  transition: all 500ms ease;
+}
+.button--hover--minimal:hover::after,
+.button--hover--minimal:focus::after {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+.button--hover--grainy::after {
+  content: "GRAINY";
+  color: #707070;
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 14%;
+  left: 65.4%;
+  height: 10px;
+  opacity: 0;
+  transform: translateY(-5px) scaleY(0);
+  transition: all 500ms ease;
+}
+.button--hover--grainy:hover::after,
+.button--hover-grainy:focus::after {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+.button--hover--rugged::after {
+  content: "DISTRESSED";
+  color: #707070;
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  height: 10px;
+  opacity: 0;
+  transform: translateY(-5px) scaleY(0);
+  transition: all 500ms ease;
+}
+.button--hover--rugged:hover::after,
+.button--hover--rugged:focus::after {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+
 h4 {
   margin-top: 8em;
   margin-bottom: 0;
