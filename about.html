@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>logo.</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <header class="header special">
+      <div class="wrapper">
+        <a href="/" id="nav-logo">logo!</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="services.html" class="nav-btn">services</a></li>
+            <li><a href="projects.html" class="nav-btn">projects</a></li>
+            <li><a href="about.html" class="nav-btn">about</a></li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="button button--border">contact</a>
+      </div>
+    </header>
+
+    <main>
+      <h3 class="about-heading">ABOUT</h3>
+      <div class="wrapper">
+        <div class="stat-bar">
+          <subhead>skillset</subhead>
+          <p id="stat-bar-title--1">turn-around time</p>
+          <div class="stat-bar--1"></div>
+          <p id="stat-bar-title--2">design variety</p>
+          <div class="stat-bar--2"></div>
+          <p id="stat-bar-title--3">social/trend awareness</p>
+          <div class="stat-bar--3"></div>
+          <p id="stat-bar-title--4">heart</p>
+          <div class="stat-bar--4"></div>
+        </div>
+        <h1 id="about-logo">logo.</h1>
+        <p class="about-text">
+          was started by a 16-year-old high school student who had a passion for
+          graphic design and positive messages.
+          <br /><br />
+          what began as an interesting hobby at the age of 14 quickly sprouted
+          into a pursuit of creativity. with numerous opportunities, Jude House
+          was able to express his creative urge in volunteer positions; after
+          over a year of volunteering, he had developed his creative mind and
+          marketing knowledge to a point where he was ready to take it to next
+          step.<span id="dots">...</span
+          ><span id="more">
+            <br /><br />
+            through partnership with
+            <a class="nott-shots" href="https://www.nottshots.com/"
+              >Nott Shots</a
+            >, Jude was able to reach real cliental with real needs. this
+            partnership allowed him to grow knowledge in the field of marketing
+            and strategy, as well as real-world work experience. <br /><br />
+            in further pursuit of developing his creative mind and knowledge in
+            the field of design, Jude found himself at an internship position
+            with
+            <a class="kelp-agency" href="https://www.kelp.agency/">Kelp</a>; an
+            agency which provides web design/development, business/brand
+            strategy, content creation, and graphical marketing. <br /><br />
+            to this day, Jude continues to work closely with
+            <a class="nott-shots" href="https://www.nottshots.com/"
+              >Nott Shots</a
+            >
+            and further develop his creative arsenal and work experience.
+          </span>
+        </p>
+        <button onclick="readMore()" id="read-more-button">Read more</button>
+      </div>
+      <section class="clients"></section>
+    </main>
+  </body>
+  <footer>
+    <div class="wrapper">
+      <img class="up-arrow" src="../images/up-arrow.svg" alt="Arrow" />
+      <p class="footer-text">back to top</p>
+      <subhead class="copy">copyright</subhead>
+      <p>logo. 2021</p>
+    </div>
+  </footer>
+  <script>
+    function readMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("read-more-button");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+</html>

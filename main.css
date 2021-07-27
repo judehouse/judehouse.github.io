@@ -598,3 +598,135 @@ footer p {
   margin-top: -3em;
   margin-right: -1em;
 }
+
+.about-heading {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+#about-logo {
+  //position: absolute;
+  display: inline;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 0.2em;
+}
+.stat-bar {
+  display: float;
+  float: left;
+  background-image: url("images/about-background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 285px;
+  height: 400px;
+}
+.stat-bar subhead {
+  display: flex;
+  justify-content: center;
+  color: #707070;
+  font-size: 1em;
+  padding-top: 1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.stat-bar--1 {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: transparent;
+  padding: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 0.9px solid #707070;
+}
+.stat-bar--2 {
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: transparent;
+  padding: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 0.9px solid #707070;
+}
+.stat-bar--3 {
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: transparent;
+  padding: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 0.9px solid #707070;
+}
+.stat-bar--4 {
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: transparent;
+  padding: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 0.9px solid #707070;
+}
+
+.stat-bar p {
+  font-weight: normal;
+  font-size: 0.4em;
+  color: #707070;
+  position: relative;
+  left: 10%;
+  top: 9%;
+  margin: 0;
+  padding: 0;
+}
+#stat-bar-title--1 {
+}
+#stat-bar-title--2 {
+  top: 24%;
+}
+#stat-bar-title--3 {
+  top: 39%;
+}
+#stat-bar-title--4 {
+  top: 54%;
+}
+.about-text {
+  margin: 0;
+  margin-left: 45%;
+  margin-top: 6em;
+  padding: 0;
+  color: #707070;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+.nott-shots {
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #31b4b4;
+}
+.kelp-agency {
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #8bc441;
+}
+#more {
+  display: none;
+}
+#read-more-button {
+  margin-left: 3%;
+}
