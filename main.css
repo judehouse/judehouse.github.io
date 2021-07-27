@@ -236,7 +236,7 @@ h3 {
   font-size: 0.7em;
   position: absolute;
   bottom: 46%;
-  left: 50%;
+  left: 37vw;
   transform: translateX(-50%);
   height: 10px;
   opacity: 0;
@@ -468,13 +468,26 @@ h6 {
   border: 2px solid #f2f0f2;
 }
 
-.latte-calculator {
+#latteCalculator {
   opacity: 0.8;
   font-weight: normal;
   color: #6bc776;
   display: block;
   margin-top: 1%;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  max-width: 57px;
+  margin: 1% auto;
+}
+#latteCalculator::after {
+  content: "";
+}
+.symbol {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 footer {
   background-color: #f8f6f8;
@@ -576,4 +589,12 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20%;
+}
+
+.headshot-image {
+  display: float;
+  float: right;
+  width: 300px;
+  margin-top: -3em;
+  margin-right: -1em;
 }

@@ -12,9 +12,9 @@
         <a href="/" id="nav-logo">logo!</a>
         <nav class="nav">
           <ul>
-            <li><a href="#" class="nav-btn">services</a></li>
-            <li><a href="#" class="nav-btn">projects</a></li>
-            <li><a href="#" class="nav-btn">about</a></li>
+            <li><a href="services.html" class="nav-btn">services</a></li>
+            <li><a href="projects.html" class="nav-btn">projects</a></li>
+            <li><a href="about.html" class="nav-btn">about</a></li>
           </ul>
         </nav>
         <a href="contact.html" class="button button--border">contact</a>
@@ -156,23 +156,25 @@
           <button id="button-purchase" class="button button--border-donate">
             donate!
           </button>
-
+          <p class="symbol">💵</p>
+          <p id="latteCalculator"></p>
           <script>
             var slider = document.getElementById("slider");
             var selector = document.getElementById("selector");
             var selectValue = document.getElementById("selectValue");
+            var latteCalculator = document.getElementById("latteCalculator");
             var bar = document.getElementById("bar");
             var coffee = document.getElementById("coffee");
 
             selectValue.innerHTML = slider.value;
 
             slider.oninput = function () {
+              latteCalculator.innerHTML = this.value * "4.20";
               selectValue.innerHTML = this.value;
               selector.style.left = this.value + "%";
               bar.style.width = this.value + "%";
             };
           </script>
-          <p class="latte-calculator">$4.20</p>
         </div>
       </section>
     </main>

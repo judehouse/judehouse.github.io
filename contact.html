@@ -4,9 +4,124 @@
     <title>logo.</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
+
+  <body onload="randomQuotes()">
+    <header class="header">
+      <div class="wrapper">
+        <a href="/" id="nav-logo">logo!</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="services.html" class="nav-btn">services</a></li>
+            <li><a href="projects.html" class="nav-btn">projects</a></li>
+            <li><a href="about.html" class="nav-btn">about</a></li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="button button--border">contact</a>
+      </div>
+    </header>
     <main>
-      <p class="temp">🥰706-248-1300🥰</p>
+      <section class="contact-page">
+        <div class="wrapper">
+          <h5>CONTACT</h5>
+          <img
+            class="headshot-image"
+            src="images/personal-headshot.png"
+            alt="Swag Photo"
+          />
+          <form
+            action="https://formsubmit.co/11jude11h@gmail.com"
+            method="POST"
+          >
+            <label for="email">email</label>
+            <input type="email" name="email" required />
+            <label for="message">message</label>
+            <input type="text" name="message" required />
+            <button
+              id="button-send"
+              class="button button--border"
+              type="submit"
+            >
+              send
+            </button>
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </section>
+      <section class="coffee-page">
+        <div class="wrapper">
+          <h6>BUY ME A LATTE</h6>
+          <subhead id="quote"></subhead>
+          <script>
+            var quotes = [
+              "&ldquo;have a brewtiful day.&ldquo;",
+              "&ldquo;just brew it!&ldquo;",
+              "&ldquo;where've you bean?&ldquo;",
+              "&ldquo;you mocha me crazy!&ldquo;",
+              "&ldquo;espresso yourself!&ldquo;",
+              "&ldquo;you bean a latte to me.&ldquo;",
+              "&ldquo;i belive in brew!&ldquo;",
+              "&ldquo;everything i brew, i brew it for you.&ldquo;",
+              "&ldquo;i didn’t choose the mug life, the mug life chose me.&ldquo;",
+              "&ldquo;mugs and kisses!&ldquo;",
+              "&ldquo;i'm getting coffee by whatever beans necessary.&ldquo;",
+              "&ldquo;keep grinding!(coffee)&ldquo;",
+              "&ldquo;don't worry, be frappé!&ldquo;",
+              "&ldquo;sip happens.&ldquo;",
+              "&ldquo;Shawn Blend-es approved.&ldquo;",
+              "&ldquo;we're the perfect blend.&ldquo;",
+              "&ldquo;coffee can make for a strong and heated debate.&ldquo;",
+              "&ldquo;this feels like deja-brew.&ldquo;",
+              "&ldquo;i'm a procaffeinator.&ldquo;",
+              "&ldquo;don't brew up trouble!&ldquo;",
+              "&ldquo;Bean-yonce is cool.&ldquo;",
+            ];
+            function randomQuotes() {
+              var idx = Math.floor(Math.random() * quotes.length);
+              document.getElementById("quote").innerHTML = quotes[idx];
+            }
+          </script>
+
+          <div class="main">
+            <input type="range" min="0" max="100" value="1" id="slider" />
+            <div id="selector">
+              <div class="selectImg"></div>
+              <div id="selectValue"></div>
+            </div>
+            <div id="bar"></div>
+          </div>
+
+          <button id="button-purchase" class="button button--border-donate">
+            donate!
+          </button>
+          <p class="symbol">💵</p>
+          <p id="latteCalculator"></p>
+          <script>
+            var slider = document.getElementById("slider");
+            var selector = document.getElementById("selector");
+            var selectValue = document.getElementById("selectValue");
+            var latteCalculator = document.getElementById("latteCalculator");
+            var bar = document.getElementById("bar");
+            var coffee = document.getElementById("coffee");
+
+            selectValue.innerHTML = slider.value;
+
+            slider.oninput = function () {
+              latteCalculator.innerHTML = this.value * "4.20";
+              selectValue.innerHTML = this.value;
+              selector.style.left = this.value + "%";
+              bar.style.width = this.value + "%";
+            };
+          </script>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="wrapper">
+        <img class="up-arrow" src="images/up-arrow.svg" alt="Arrow" />
+        <p class="footer-text">back to top</p>
+        <subhead class="copy">copyright</subhead>
+        <p>logo. 2021</p>
+      </div>
+    </footer>
   </body>
 </html>
