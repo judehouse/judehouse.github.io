@@ -412,7 +412,8 @@ h6 {
 }
 
 #slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  // -moz-appearance: none;
+  // -webkit-appearance: none;
   width: 48px;
   height: 48px;
   cursor: pointer;
@@ -780,7 +781,7 @@ footer p {
 
 @media (max-width: 676px) {
   h1 {
-    color: red;
+    // color: red;
   }
   .header {
     margin: 0;
