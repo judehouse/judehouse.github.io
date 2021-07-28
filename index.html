@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>logo.</title>
     <link rel="stylesheet" href="main.css" />
@@ -11,13 +12,33 @@
       <div class="wrapper">
         <a href="/" id="nav-logo">logo!</a>
         <nav class="nav">
-          <ul>
+          <button class="header-nav-trigger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              width="28"
+              height="32"
+            >
+              <title>Open Menu</title>
+              <path
+                <path
+                fill="currentColor"
+                d="M440 192H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8z"
+              ></path>
+            </svg>
+          </button>
+          <ul class="nav-ul" id="nav-ul">
             <li><a href="services.html" class="nav-btn">services</a></li>
             <li><a href="projects.html" class="nav-btn">projects</a></li>
             <li><a href="about.html" class="nav-btn">about</a></li>
           </ul>
         </nav>
-        <a href="contact.html" class="button button--border">contact</a>
+        <a
+          href="contact.html"
+          id="contact-nav-button"
+          class="button button--border"
+          >contact</a
+        >
       </div>
     </header>
 
@@ -33,7 +54,9 @@
             <div class="hero-background-image">
               <subhead>what do we do?</subhead>
               <h2>graphic design by people that don't suck.</h2>
-              <a href="#" class="button button--blur">what we mean</a>
+              <a href="#" class="button button--blur what-we-mean"
+                >what we mean</a
+              >
             </div>
           </section>
           <section class="right-col">
@@ -186,5 +209,6 @@
         <p>logo. 2021</p>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

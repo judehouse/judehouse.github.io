@@ -111,6 +111,19 @@ h2 {
   display: flex;
   gap: 2rem;
 }
+.header-nav-trigger {
+  display: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  padding: 1rem;
+  color: #e1cae6;
+}
+.header-nav-trigger:active,
+.header-nav-trigger:focus {
+  color: #f8f6f8;
+}
+
 .nav a {
   color: #707070;
   font-weight: normal;
@@ -744,16 +757,16 @@ footer p {
 #read-more-button {
 }
 .clients {
+  display: block;
   position: relative;
-  margin-top: 25%;
+  margin-top: 10rem;
   margin-bottom: 8%;
 }
 .main-carousel img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 .main-carousel {
-  position: fixed;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #e1cae6;
@@ -763,4 +776,67 @@ footer p {
   margin-right: 10px;
 }
 .carousel-cell.is-selected {
+}
+
+@media (max-width: 676px) {
+  h1 {
+    color: red;
+  }
+  .header {
+    margin: 0;
+    padding: 0;
+  }
+  .header .wrapper {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #contact-nav-button {
+    padding: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    order: 3;
+    font-size: 0.6em;
+  }
+  #nav-logo {
+    order: 2;
+    font-size: 1.8em;
+  }
+  .header-nav-trigger {
+    order: 1;
+  }
+  .nav ul {
+    display: none;
+  }
+  .header-nav-trigger {
+    display: block;
+    // margin-top: -3%;
+  }
+  .menu-active {
+  }
+  h2 {
+    font-size: 1em;
+  }
+  subhead {
+    font-size: 0.5em;
+  }
+  #what-we-mean {
+    font-size: 0.8em;
+    padding: 0.7em;
+    inline-size: 13em;
+    margin: 0;
+  }
+  .hero-background-image {
+    width: 90%;
+  }
+  h5 {
+    justify-content: center;
+  }
+  .contact-page {
+  }
+  #quote {
+    margin-bottom: 25%;
+  }
 }
