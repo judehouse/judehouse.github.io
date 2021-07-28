@@ -18,6 +18,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper-footer {
+  position: static;
+  max-width: 1125px;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 *,
 *::before,
 *::after {
@@ -187,7 +196,7 @@ h2 {
 
 .project-page {
   background-image: url("images/project-background.png");
-  width: 100%;
+  max-width: 100%;
   min-height: 40em;
   margin: -10em 0;
   background-size: cover;
@@ -396,6 +405,7 @@ h6 {
   cursor: pointer;
   z-index: 3;
   position: relative;
+  left: -3.3%;
 }
 
 #selector {
@@ -619,6 +629,7 @@ footer p {
   background-repeat: no-repeat;
   width: 285px;
   height: 400px;
+  margin-left: 1em;
 }
 .stat-bar subhead {
   display: flex;
@@ -631,10 +642,10 @@ footer p {
 }
 .stat-bar--1 {
   top: 10%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
-  width: 80%;
-  background: transparent;
+  width: 70%;
+  background: #e1cae6;
   padding: 7px;
   border-radius: 20px;
   text-decoration: none;
@@ -644,10 +655,10 @@ footer p {
 }
 .stat-bar--2 {
   top: 25%;
-  left: 50%;
+  left: 43%;
   transform: translateX(-50%);
-  width: 80%;
-  background: transparent;
+  width: 65%;
+  background: #e1cae6;
   padding: 7px;
   border-radius: 20px;
   text-decoration: none;
@@ -657,10 +668,10 @@ footer p {
 }
 .stat-bar--3 {
   top: 40%;
-  left: 50%;
+  left: 47%;
   transform: translateX(-50%);
-  width: 80%;
-  background: transparent;
+  width: 73%;
+  background: #e1cae6;
   padding: 7px;
   border-radius: 20px;
   text-decoration: none;
@@ -673,7 +684,7 @@ footer p {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  background: transparent;
+  background: #e1cae6;
   padding: 7px;
   border-radius: 20px;
   text-decoration: none;
@@ -704,13 +715,16 @@ footer p {
   top: 54%;
 }
 .about-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
   margin: 0;
-  margin-left: 45%;
-  margin-top: 6em;
+  margin-left: 20%;
+  margin-top: 2em;
   padding: 0;
   color: #707070;
-  font-weight: normal;
+  font-weight: medium;
   font-size: 0.7em;
+  inline-size: 600px;
 }
 .nott-shots {
   letter-spacing: 0.02em;
@@ -728,5 +742,25 @@ footer p {
   display: none;
 }
 #read-more-button {
-  margin-left: 3%;
+}
+.clients {
+  position: relative;
+  margin-top: 25%;
+  margin-bottom: 8%;
+}
+.main-carousel img {
+  max-width: 50%;
+  height: auto;
+}
+.main-carousel {
+  position: fixed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e1cae6;
+}
+.carousel-cell {
+  width: 50%;
+  margin-right: 10px;
+}
+.carousel-cell.is-selected {
 }

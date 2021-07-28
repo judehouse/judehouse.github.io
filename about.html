@@ -3,6 +3,14 @@
     <meta charset="UTF-8" />
     <title>logo.</title>
     <link rel="stylesheet" href="../main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    </style>
   </head>
   <body>
     <header class="header special">
@@ -21,7 +29,7 @@
 
     <main>
       <h3 class="about-heading">ABOUT</h3>
-      <div class="wrapper">
+      <div class="wrapper-about-section">
         <div class="stat-bar">
           <subhead>skillset</subhead>
           <p id="stat-bar-title--1">turn-around time</p>
@@ -67,11 +75,26 @@
         </p>
         <button onclick="readMore()" id="read-more-button">Read more</button>
       </div>
-      <section class="clients"></section>
+      <section class="clients">
+        <h4>CLIENTS/PARTNERS</h4>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <a href="#"> <img src="images/kelp-agency-background.png" /></a>
+          </div>
+          <div class="carousel-cell">
+            <a href="#"><img src="images/nott-shots-background.png" /></a>
+          </div>
+          <div class="carousel-cell">
+            <a href="#"> <img src="images/remnant-consulting-background.png" /></a>
+          </div>
+          <div class="carousel-cell">
+            <a href="#"><img src="images/cornerstone-church-background.png"></a>
+          </div>
+      </section>
     </main>
   </body>
   <footer>
-    <div class="wrapper">
+    <div class="wrapper-footer">
       <img class="up-arrow" src="../images/up-arrow.svg" alt="Arrow" />
       <p class="footer-text">back to top</p>
       <subhead class="copy">copyright</subhead>
@@ -94,5 +117,22 @@
         moreText.style.display = "inline";
       }
     }
+  </script>
+  <script>
+    var elem = document.querySelector(".main-carousel");
+    var flkty = new Flickity(elem, {
+      // options
+      cellAlign: "center",
+      contain: true,
+      wrapAround: true,
+      freeScroll: true,
+      autoPlay: 2000,
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity(".main-carousel", {
+      // options
+    });
   </script>
 </html>
