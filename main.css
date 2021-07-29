@@ -176,9 +176,10 @@ h2 {
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   text-decoration: none;
-  background-color: transparent;
+  background-color: white;
   position: relative;
   letter-spacing: 0.09em;
+  margin-bottom: 5em;
 }
 .mobile-menu a::after {
   content: "";
@@ -202,7 +203,9 @@ h2 {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu-active .mobile-menu {
   z-index: 3;
@@ -210,11 +213,12 @@ h2 {
   opacity: 0.9;
   border-radius: 50px;
   position: fixed;
+  min-width: 80%;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
   padding-top: 1em;
-  padding-bottom: 18em;
+  padding-bottom: 1em;
   background-image: url("images/abstract-image.png");
   background-repeat: no-repeat;
   background-size: contain;
