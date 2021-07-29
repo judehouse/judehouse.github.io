@@ -565,6 +565,7 @@ h6 {
   transform: translateX(-50%);
   bottom: 0;
   border: 2px solid #f2f0f2;
+  font-size: 0.7em;
 }
 
 #latteCalculator {
@@ -636,6 +637,9 @@ footer p {
 }
 .project-page-sub {
   font-size: 0.7em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  text-align: center;
 }
 .project-page-header {
   margin-top: -1em;
