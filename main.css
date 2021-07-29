@@ -870,6 +870,32 @@ footer p {
 #page-error {
   display: none;
 }
+.headshot-image {
+  outline-width: 1.5px;
+  outline-color: #f8f6f8;
+  outline-style: solid;
+  max-width: 10em;
+  box-shadow: 5px 5px 10px rgb(111 120 150 / 0.5);
+  margin-top: -8.5em;
+}
+.wide-personal-image {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  outline-width: 1.5px;
+  outline-color: #e1cae6;
+  outline-style: solid;
+  box-shadow: 5px 5px 10px rgb(111 120 150 / 0.3);
+}
+.clients h4 {
+  margin-top: 0;
+}
+.clients {
+  margin-top: 0;
+}
 
 @media (max-width: 676px) {
   #page-404 {
@@ -974,11 +1000,13 @@ footer p {
     top: 10%;
   }
   .headshot-image {
+    margin-top: 0;
     outline-width: 1.5px;
     outline-color: #f8f6f8;
     outline-style: solid;
     max-width: 7em;
     box-shadow: 5px 5px 10px rgb(111 120 150 / 0.5);
+    margin-top: -3em;
   }
 
   .stat-bar {
