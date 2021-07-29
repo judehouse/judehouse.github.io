@@ -6,17 +6,37 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="header special">
-      <div class="wrapper">
+    <header class="header">
+      <div id="small-page" class="wrapper">
         <a href="/" id="nav-logo">logo!</a>
         <nav class="nav">
-          <ul>
+          <button class="header-nav-trigger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              width="28"
+              height="32"
+            >
+              <title>Open Menu</title>
+              <path
+                <path
+                fill="currentColor"
+                d="M440 192H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8z"
+              ></path>
+            </svg>
+          </button>
+          <ul class="nav-ul" id="nav-ul">
             <li><a href="services.html" class="nav-btn">services</a></li>
             <li><a href="projects.html" class="nav-btn">projects</a></li>
             <li><a href="about.html" class="nav-btn">about</a></li>
           </ul>
         </nav>
-        <a href="contact.html" class="button button--border">contact</a>
+        <a
+          href="contact.html"
+          id="contact-nav-button"
+          class="button button--border"
+          >contact</a
+        >
       </div>
     </header>
 
